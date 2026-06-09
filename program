@@ -1,0 +1,81 @@
+#include <iostream>
+using namespace std;
+
+void firstFloor() {
+    cout << "\n--- First Floor ---\n";
+    cout << "F-1 : Brain Kernighan Lab\n";
+    cout << "F-2 : Common Computer Centre\n";
+    cout << "F-3&4: IT Labs\n";
+    cout << "F-5 : Common R & D Centre\n";
+    cout << "F-6 : Girls Common Room\n";
+    cout << "F-7 : Girls Rest Room\n";
+    cout << "F-8A&B: Sim Labs\n";
+    cout << "F-9 : Ken Thompson Lab\n";
+    cout << "F-10 : Girls Rest Room\n";
+    cout << "F-11 : Girls Common Room\n";
+}
+
+void secondFloor() {
+    cout << "\n--- Second Floor ---\n";
+    cout << "S-25 : Lecture Hall\n";
+    cout << "S-24 : Lecture Hall\n";
+    cout << "S-23 : Lecture Hall\n";
+    cout << "S-22 : Lecture Hall\n";
+    cout << "S-21 : Lecture Hall\n";
+    cout << "S-20 : Boys Rest Room\n";
+    cout << "S-19 : Dept. of IT\n";
+    cout << "S-18 : Lecture Hall\n";
+    cout << "S-17 : Lecture Hall\n";
+    cout << "S-16 : Lecture Hall\n";
+    cout << "S-15 : Lecture Hall\n";
+    cout << "S-14 : Lecture Hall\n";
+    cout << "S-13 : Lecture Hall\n";
+    cout << "S-12 : Lecture Hall\n";
+    cout << "S-11 : Dept. of BS&H\n";
+
+    cout << "\nAdditional Rooms:\n";
+    cout << "S-26 : Girls Rest Room\n";
+    cout << "S-27 : Lecture Hall\n";
+    cout << "S-28 : Lecture Hall\n";
+    cout << "S-29 : Lecture Hall\n";
+    cout << "S-1 : Lecture Hall\n";
+    cout << "S-2 : Lecture Hall\n";
+    cout << "S-3 : Lecture Hall\n";
+    cout << "S-4 : Lecture Hall\n";
+    cout << "S-5 : Lecture Hall\n";
+    cout << "S-6 : Boys Rest Room\n";
+    cout << "S-7 : Lecture Hall\n";
+    cout << "S-8 : Lecture Hall\n";
+    cout << "S-9 : Lecture Hall\n";
+    cout << "S-10 : Dept. of BS&H\n";
+}
+
+int main() {
+    int choice;
+
+    do {
+        cout << "\n===== Building Navigation System =====\n";
+        cout << "1. First Floor\n";
+        cout << "2. Second Floor\n";
+        cout << "0. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch(choice) {
+            case 1:
+                firstFloor();
+                break;
+            case 2:
+                secondFloor();
+                break;
+            case 0:
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice!\n";
+        }
+
+    } while(choice != 0);
+
+    return 0;
+}
